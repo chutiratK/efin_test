@@ -121,6 +121,9 @@ export default {
         padding: 18px 40px;
         overflow: hidden;
         box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        margin: 20px auto;
     }
     .list-table h1 {
         font-size: 25px;

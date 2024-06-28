@@ -263,5 +263,29 @@ export default {
         font-size: 12px;
     }
 }
+@media(max-width: 500px) {
+    .name-surname, .phoneNumber-gender, .gender-age {
+        display: block;
+    }
+    .addUser-form {
+        padding: 20px 20px;
+    }
+    .addUser-form h1 {
+        font-size: 20px;
+    }
+    .addUser-itemField input,
+    .gender-selector,
+    .submit-btn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .submit-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .submit-btn .backToHome {
+        width: 100%;
+    }
+}
 </style>
   

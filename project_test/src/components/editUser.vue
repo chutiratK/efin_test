@@ -203,6 +203,20 @@ export default {
         font-size: 12px;
     }
 }
+@media(max-width: 500px) {
+    .updateUser-form {
+        padding: 20px 20px;
+    }
+    .updateUser-form h1 {
+        font-size: 20px;
+    }
+    .updateUser-itemField input,
+    .gender-selector,
+    .submit-btn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
 </style>
     
   
