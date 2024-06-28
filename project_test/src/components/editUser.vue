@@ -143,6 +143,66 @@ export default {
 .updateUser-form form{
     margin-top: 20px;
 }
+@media(max-width: 1024px) {
+    .updateUser-form {
+        padding: 35px 70px;
+        margin: 40px auto;
+    }
+    .updateUser-form h1{
+        font-size: 28px;
+    }
+    .updateUser-itemField {
+        width: 100%;
+        font-size: 14px;
+    }
+    .updateUser-itemField input {
+        width: 100%;
+        height: 40px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    .submit-btn button{
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .gender-selector {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 800px) {
+    .updateUser-form {
+        padding: 35px 70px;
+        margin: 40px auto;
+    }
+    .updateUser-form h1{
+        font-size: 24px;
+    }
+    .updateUser-itemField {
+        width: 100%;
+        font-size: 12px;
+    }
+    .updateUser-itemField input {
+        width: 100%;
+        height: 40px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    .submit-btn button{
+        margin-top: 20px;
+        width: 140px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .gender-selector {
+        width: 60px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
 </style>
     
   

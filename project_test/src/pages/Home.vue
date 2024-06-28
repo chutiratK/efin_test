@@ -40,7 +40,7 @@ export default {
 
 <style>
 .home {
-    padding: 50px 100px;
+    padding: 50px 50px;
     margin: auto;
 }
 .add-btn {
@@ -68,6 +68,27 @@ export default {
     font-weight: 600;
     color: #6a6a6a;
     transition: color 0.3s ease;
+}
+@media(max-width: 1024px) {
+    .add-btn {
+        gap: 18px;
+        width: 190px;
+        height: 48px;
+    }
+}
+@media(max-width: 800px) {
+    .add-btn {
+        gap: 15px;
+        width: 180px;
+        height: 45px;
+    }
+}
+@media(max-width: 500px) {
+    .add-btn {
+        gap: 12px;
+        width: 170px;
+        height: 40px;
+    }
 }
 </style>
 

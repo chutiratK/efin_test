@@ -24,4 +24,9 @@ export default {
   padding: 50px 100px;
   margin: auto;
 }
+@media(max-width: 800px) {
+    .update-form {
+        padding: 30px 20px;
+    }
+}
 </style>

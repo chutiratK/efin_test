@@ -1,14 +1,14 @@
 <template>
     <div class="list-table">
         <h1>User List ({{ totalUsers }})</h1>
-        <div class="list-format-main">
+        <div class="header-rows list-format-main">
             <p>Name</p>
             <p>Surname</p>
             <p>Age</p>
             <p>Phone Number</p>
             <p>Gender</p>
             <p>Email</p>
-            <p>Actions</p>
+            <p></p>
         </div>
         <div class="data-rows">
             <div v-for="(user, index) in users" :key="index" class="list-format-main list-format">
@@ -54,7 +54,6 @@ export default {
         const deleteUser = (id) => {
             userStore.deleteUser(id)
         }
-        console.log('user', users.value)
 
         return {
             users,
@@ -75,10 +74,12 @@ export default {
     border-radius: 6px;
     background: #f7f7f7;
     margin-top: 30px;
+    max-height: 500px;
+    overflow: auto;
 }
 .list-format-main {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr 1fr 0.5fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr 1.5fr 0.5fr 1.5fr 1fr;
     gap: 10px;
     width: 100%;
     padding: 10px 0;
@@ -91,6 +92,9 @@ export default {
     align-items: center;
     font-weight: 500;
 }
+.header-rows p{
+    font-weight: 500 !important;
+}
 .data-row {
     display: contents;
 }
@@ -100,5 +104,40 @@ export default {
 }
 .actions img {
     cursor: pointer;
+}
+@media(max-width: 1024px) {
+    .list-format-main {
+        font-size: 12px;
+    }
+    .list-table h1 {
+        font-size: 28px;
+    }
+}
+@media(max-width: 800px) {
+    .list-format-main {
+        font-size: 10px;
+    }
+    .list-table {
+        padding: 18px 40px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .list-table h1 {
+        font-size: 25px;
+    }
+    .actions img {
+        width: 20px;
+    }
+}
+@media(max-width: 500px) {
+    .list-format-main {
+        font-size: 7px;
+    }
+    .list-table h1 {
+        font-size: 17px;
+    }
+    .actions img {
+        width: 15px;
+    }
 }
 </style>

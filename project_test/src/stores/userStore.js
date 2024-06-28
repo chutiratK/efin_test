@@ -10,7 +10,6 @@ export const useUserStore = defineStore('user', {
       this.users.push(user);
       this.saveUsers();
     },
-
     updateUser(updatedUser) {
       const index = this.users.findIndex(user => user.id === updatedUser.id)
       if (index !== -1) {
@@ -18,19 +17,12 @@ export const useUserStore = defineStore('user', {
         this.saveUsers();
       }
     },
-
     deleteUser(userId) {
       this.users = this.users.filter(user => user.id !== userId);
       this.saveUsers();
     },
-
     saveUsers() {
       localStorage.setItem('users', JSON.stringify(this.users));
     },
-
-    fetchUsers() {
-      // This can be used to reset or fetch initial users
-      this.users = JSON.parse(localStorage.getItem('users') || '[]');
-    }
   }
 });
